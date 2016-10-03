@@ -1,6 +1,6 @@
 # Mac Pomodoro
 
-> A simple "pomodoro" timer, to help you focus while working on your macintosh
+> A "pomodoro" timer, to help you focus while working on your macintosh
 
 Its hard to keep track of time when you are on your laptop whether you are working or just watching youtube. So I use this subtle way of notifying myself of passing time every 30 minutes or so. This is a simple bash script I use on my Mac.
 
