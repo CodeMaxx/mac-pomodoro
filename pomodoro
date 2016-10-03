@@ -1,0 +1,22 @@
+#! /bin/bash
+
+if [ -z "$1" ]; then
+    POMODORO=1800
+else
+    POMODORO="$1"
+fi
+
+echo "Will blink the screen every $POMODORO seconds." 1>&2
+
+while true; do
+    ORIG=`awk 'NF>1{print $NF}' <(brightness -l | sed -n 2p)`
+    if [ $(echo "$ORIG < 0.2" | bc -l) -eq 1 ]; then
+        # Increase brightness if screen was dim initially
+        brightness 0.4
+    else
+    	brightness 0.1
+    fi
+    sleep 0.3
+    brightness $ORIG
+    sleep $POMODORO
+done
