@@ -6,6 +6,8 @@ Its hard to keep track of time when you are on your laptop whether you are worki
 
 ## Installation and Usage
 
+(Execute the given commands in the **Terminal** app)
+
 Install using the following command in this directory:
 
 `sudo make`
