@@ -14,6 +14,8 @@ Install using the following command in this directory:
 
 Enter your password(if prompted) to provide proper permissions for installation.
 
+`source ~/.bash_profile`
+
 Run using `pomodoro <duration(in seconds)>` (default duration = 1800 seconds = 30 minutes).
 
 This will prevent you from using your terminal session so you can use the following command to run this in background.
